@@ -48,7 +48,7 @@ $ca->_render = function() use ($ca) {
   <?php endif; ?>
 
   <form method='post' action='<?php
-    echo basename($_SERVER['REQUEST_URI']);
+    echo $_SERVER['REQUEST_URI'];
   ?>'>
     <input type='hidden' name='target' value='<?php
       echo $ca->targetString()
