@@ -1,51 +1,18 @@
+<?php $c = require('comment-init.php'); 
+  $c->setTargetString('page-1');
+?>
 <html>
 <head>
   <title>AHA - katie's calendar</title>
-</head>
+  <link type="text/css" rel="stylesheet" href="styles/base.css" />
+  
 <style type="text/css">
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  width: 100%;
-}
-#out-wrap { }
 #in-wrap {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
   width: 460px;
 }
-.cap {
-  padding-top: 11px;
-  font-size: larger;
-}
-.bottom {
-  height: 150px;
-}
-.clicky {
-  /* derp */
-}
-.nav {
-  width: 100%;
-}
-div.nav .rt {
-  float: right;
-}
-a.nav {
-  color: black;
-  text-decoration: none;
-}
-a.nav:hover {
-  color: #666;
-  text-decoration: underline;  
-}
-.clear {
-  clear: both;
-}
-
 </style>
+
+</head>
 <body>
   <div id='out-wrap'>
     <div id='in-wrap'>
@@ -59,11 +26,12 @@ a.nav:hover {
       <div clear='clear'></div>
       <div class='nav'>
         <div class='rt'>
-          <a class='nav' href='page-2.html'>next &gt;</a>
+          <a class='nav' href='page-2.php'>next &gt;</a>
         </div>
-      </div>      
+      </div>
+      <?php $c->render(); ?>      
       <div class='cap bottom'>&nbsp;</div>
     </div>
-  </div>
+  </div>  
 </body>
 </html>

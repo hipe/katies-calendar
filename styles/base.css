@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+}
+#out-wrap { }
+#in-wrap {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cap {
+  padding-top: 11px;
+  font-size: larger;
+}
+.bottom {
+  height: 150px;
+}
+.clicky {
+  /* derp */
+}
+.nav {
+  width: 100%;
+  padding-top: 15px;
+}
+div.nav .lf {
+  float: left;
+}
+div.nav .rt {
+  float: right;
+}
+a.nav {
+  color: black;
+  text-decoration: none;
+}
+a.nav:hover {
+  color: #666;
+  text-decoration: underline;
+}
+.clear {
+  clear: both;
+}
+table.comment {
+  margin-top: 20px;
+}
+table.comment th {
+  border: 1.87px solid #333333;
+  background-color: #878282;
+}
+table.comment th div {
+  padding: 5px 5px 0 5px;
+}
+table.comment th.top {
+  -moz-border-radius-topleft: 8px;
+  border-top-left-radius: 8px;
+}
+table.comment th.bot {
+  -moz-border-radius-bottomleft: 8px;
+  border-bottom-left-radius: 8px;
+}
+.comment-header {
+  clear: both;
+  margin-top:50px;
+  margin-bottom:5px;
+}
+div.comment {
+  background: #999;
+  width: 400px;
+  padding: 8px 8px 8px 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+}
+div.comment .person {
+  margin-left: 10px;
+  font-weight: bold;
+}
+div.comment .content {
+  margin-left: 10px;
+  margin-top: 4px;
+  background-color: #ccc;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  padding: 6px 6px 4px 6px;
+  font-size: 0.87em;
+}
+.haha-wrap {
+  position: relative;
+}
+.haha {
+  float: right;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+  background: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 61px;
+  text-align: right;
+  padding-top: 5px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+}

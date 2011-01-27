@@ -1,54 +1,16 @@
+<?php $c = require('comment-init.php');
+  $c->setTargetString('page-2');
+?>
+
 <html>
 <head>
   <title>AHA - katie's calendar</title>
+  <link type="text/css" rel="stylesheet" href="styles/base.css" />
 </head>
 <style type="text/css">
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  width: 100%;
-}
-#out-wrap { }
 #in-wrap {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
   width: 800px;
 }
-.cap {
-  padding-top: 11px;
-  font-size: larger;
-}
-.bottom {
-  height: 150px;
-}
-.clicky {
-  /* derp */
-}
-.nav {
-  width: 100%;
-  padding-top: 20px;
-}
-div.nav .rt {
-  float: right;
-}
-div.nav .lf {
-  float: left;
-}
-a.nav {
-  color: black;
-  text-decoration: none;
-}
-a.nav:hover {
-  color: #666;
-  text-decoration: underline;  
-}
-.clear {
-  clear: both;
-}
-
 </style>
 <body>
   <div id='out-wrap'>
@@ -63,12 +25,13 @@ a.nav:hover {
       <div clear='clear'></div>
       <div class='nav'>
         <div class='lf'>
-          <a class='nav' href='index.html'>&lt; prev - establishing shot</a>
+          <a class='nav' href='index.php'>&lt; prev - establishing shot</a>
         </div>
         <div class='rt'>
-          <a class='nav' href='page-3.html'>even closer! - next &gt;</a>
+          <a class='nav' href='page-3.php'>even closer! - next &gt;</a>
         </div>
-      </div>      
+      </div>
+      <?php $c->render(); ?>
       <div class='cap bottom'>&nbsp;</div>
     </div>
   </div>
