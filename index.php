@@ -1,11 +1,12 @@
-<?php $c = require('comment-init.php'); 
+<?php $c = require('comment-init.php');
   $c->setTargetString('page-1');
+  $c->setFormAction('/katies-calendar/index.php');
 ?>
 <html>
 <head>
   <title>AHA - katie's calendar</title>
   <link type="text/css" rel="stylesheet" href="styles/base.css" />
-  
+
 <style type="text/css">
 #in-wrap {
   width: 460px;
@@ -29,9 +30,9 @@
           <a class='nav' href='page-2.php'>next &gt;</a>
         </div>
       </div>
-      <?php $c->render(); ?>      
+      <?php $c->render(); ?>
       <div class='cap bottom'>&nbsp;</div>
     </div>
-  </div>  
+  </div>
 </body>
 </html>

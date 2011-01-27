@@ -47,9 +47,7 @@ $ca->_render = function() use ($ca) {
   <em class='msg em'>No comments yet!</em>
   <?php endif; ?>
 
-  <form method='post' action='<?php
-    echo $_SERVER['REQUEST_URI'];
-  ?>'>
+  <form method='post' action='<?php echo $ca->formAction(); ?>' >
     <input type='hidden' name='target' value='<?php
       echo $ca->targetString()
     ?>'></input>

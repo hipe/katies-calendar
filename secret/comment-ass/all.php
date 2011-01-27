@@ -46,6 +46,13 @@ class CommentAss {
   function finish() {
     unset($this->p);
   }
+  function formAction() {
+    if (isset($this->formAction)) return $this->formAction;
+    return $_SERVER['REQUEST_URI'];
+  }
+  function setFormAction($s) {
+    $this->formAction = $s;
+  }
   function hasMessage() {
     return 0 < count($this->messages);
   }
